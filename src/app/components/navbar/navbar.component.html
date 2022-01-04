@@ -1,0 +1,33 @@
+<div class="navbar-container">
+	<div class="container">
+		<div #contentLogo class="content-logo"></div>
+		<div class="content-input">
+			<div class="input-search">
+				<input type="text" placeholder="Buscar productos en venta" />
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+		<div class="content-options">
+			<div *ngFor="let option of optionsCard" class="option">
+				<card-navbar [option]="option"></card-navbar>
+			</div>
+		</div>
+		<div class="content-options">
+			<div *ngFor="let option of optionsIcon" class="option">
+				<navbar-option [option]="option"></navbar-option>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-menu">
+		<div class="container">
+			<div class="content-categories">
+
+			</div>
+
+			<div class="content-options">
+				
+			</div>
+		</div>
+	</div>
+</div>
